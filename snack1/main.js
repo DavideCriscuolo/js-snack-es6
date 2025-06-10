@@ -1,7 +1,5 @@
 //Creare un array di oggetti: Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso. Stampare a schermo la bici con peso minore.
 
-
-
 const bikes = [
   {
     name: "mountain-bike",
@@ -13,7 +11,7 @@ const bikes = [
   },
   {
     name: "small-bike",
-    peso:10,
+    peso: 10,
   },
   {
     name: "big-bike",
@@ -44,7 +42,3 @@ const bikes = [
     peso: 37,
   },
 ];
-
-for (let i = 0;i<){
-    
-}
