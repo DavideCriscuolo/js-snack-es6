@@ -42,16 +42,22 @@ const bikes = [
     peso: 37,
   },
 ];
+
+//Creiamo una variabile per tenere traccia del peso minimo
 let pesoMinimo = bikes[0].peso;
+// Creiamo una variabile per tener traccia della bici
 let biciMin = bikes[0];
+
+//iteriamo attrverso l'array
 for (let i = 0; i < bikes.length; i++) {
-  const bike = bikes[i];
+  const bike = bikes[i]; // salviamo ogni singolo elemento dell array
 
-  const pesoBike = bike["peso"];
+  const pesoBike = bike["peso"]; //prendiamo il valore peso
 
+  // diamo una condizione dove confrontiamo il peso
   if (pesoBike < pesoMinimo) {
-    pesoMinimo = pesoBike;
-    biciMin = bike;
+    pesoMinimo = pesoBike; //aggiorniamo il peso con quello piu basso
+    biciMin = bike; //aggiorniamo la bicicletta che pesa di meno
     console.log(`La bici che pesa di meno è ${biciMin["name"]}`);
   }
 }
