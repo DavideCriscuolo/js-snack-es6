@@ -42,3 +42,16 @@ const bikes = [
     peso: 37,
   },
 ];
+let pesoMinimo = bikes[0].peso;
+let biciMin = bikes[0];
+for (let i = 0; i < bikes.length; i++) {
+  const bike = bikes[i];
+
+  const pesoBike = bike["peso"];
+
+  if (pesoBike < pesoMinimo) {
+    pesoMinimo = pesoBike;
+    biciMin = bike;
+    console.log(`La bici che pesa di meno è ${biciMin["name"]}`);
+  }
+}
