@@ -58,12 +58,22 @@ const clubs = [
 
 // Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”.
 
+const clubsNameFalliSub = [];
+
 function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 for (let i = 0; i < clubs.length; i++) {
   const club = clubs[i];
+
   club.points = getRndInteger(0, 80);
   club.falliSub = getRndInteger(0, 30);
+  const nuovo = {
+    name: club.name,
+    falliSubiti: club.falliSub,
+  };
+  clubsNameFalliSub.push(nuovo);
 }
 console.log(clubs);
+console.log(clubsNameFalliSub);
+//Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
